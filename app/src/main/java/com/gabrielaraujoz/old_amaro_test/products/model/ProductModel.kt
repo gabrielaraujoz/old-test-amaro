@@ -1,4 +1,4 @@
-package com.gabrielaraujoz.old_amaro_test.data.model
+package com.gabrielaraujoz.old_amaro_test.products.model
 
 data class ProductModel(
     val name: String,
@@ -10,6 +10,6 @@ data class ProductModel(
     val actual_price: String,
     val discount_percentage: String,
     val installments: String,
-    val image: String,
+    val image: String?,
     val sizes: List<SizeModel>
 )

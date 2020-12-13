@@ -2,4 +2,6 @@
     <string name="app_name">Old Test: Amaro Store</string>
     <string name="ops_nothing_was_found">Ops, nothing was found</string>
     <string name="image_not_found">Image: Not Found</string>
+    <string name="product_image">Product Image</string>
+    <string name="price">Preço:</string>
 </resources>

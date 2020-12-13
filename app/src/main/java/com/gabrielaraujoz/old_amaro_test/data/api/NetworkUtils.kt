@@ -7,7 +7,7 @@ class NetworkUtils {
 
     companion object {
 
-        private const val BASE_URL = "http://www.mocky.io/v2/59b6a65a0f0000e90471257d"
+        private const val BASE_URL = "https://www.mocky.io/v2/"
 
         fun getRetrofitInstance(baseUrl: String = BASE_URL): Retrofit = Retrofit.Builder()
             .baseUrl(baseUrl)

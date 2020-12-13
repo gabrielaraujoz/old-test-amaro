@@ -5,22 +5,27 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".products.view.MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/background_gray"
+        tools:listitem="@layout/product_item"
         android:id="@+id/recyclerProducts"/>
 
     <LinearLayout
         android:id="@+id/loading"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
         android:orientation="vertical">
 
         <ProgressBar
             style="?android:attr/progressBarStyle"
             android:layout_width="wrap_content"
+            android:layout_gravity="center"
             android:layout_height="wrap_content" />
 
     </LinearLayout>

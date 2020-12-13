@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.gabrielaraujoz.old_amaro_test.MainActivity
+import com.gabrielaraujoz.old_amaro_test.products.view.MainActivity
 import com.gabrielaraujoz.old_amaro_test.R
 
 class SplashScreenActivity : AppCompatActivity() {

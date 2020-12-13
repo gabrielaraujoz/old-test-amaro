@@ -1,4 +1,4 @@
-package com.gabrielaraujoz.old_amaro_test.data.model
+package com.gabrielaraujoz.old_amaro_test.products.model
 
 data class SizeModel (
     val available: Boolean,
