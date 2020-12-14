@@ -3,8 +3,10 @@ package com.gabrielaraujoz.old_amaro_test.products.view
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.core.os.bundleOf
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.gabrielaraujoz.old_amaro_test.R
@@ -24,10 +26,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val list =  findViewById<RecyclerView>(R.id.recyclerProducts)
-        val manager = LinearLayoutManager(this)
+        val manager = GridLayoutManager(this, 2)
 
         _productList = mutableListOf()
-        _productAdapter = ProductAdapter(_productList)
+        _productAdapter = ProductAdapter(_productList) {
+            val bundle = bundleOf("Product" to it)
+
+        }
 
         list.apply{
             setHasFixedSize(true)
