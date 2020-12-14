@@ -6,6 +6,8 @@ import android.view.View
 import androidx.core.os.bundleOf
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -13,6 +15,7 @@ import com.gabrielaraujoz.old_amaro_test.R
 import com.gabrielaraujoz.old_amaro_test.products.model.ProductModel
 import com.gabrielaraujoz.old_amaro_test.products.repository.ProductRepository
 import com.gabrielaraujoz.old_amaro_test.products.viewmodel.ProductViewModel
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,7 +34,6 @@ class MainActivity : AppCompatActivity() {
         _productList = mutableListOf()
         _productAdapter = ProductAdapter(_productList) {
             val bundle = bundleOf("Product" to it)
-
         }
 
         list.apply{
